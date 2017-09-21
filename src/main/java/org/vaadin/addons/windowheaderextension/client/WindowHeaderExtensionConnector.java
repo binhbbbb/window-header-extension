@@ -6,6 +6,7 @@ import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Style;
+import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.user.client.DOM;
 import com.vaadin.client.ServerConnector;
 import com.vaadin.client.communication.RpcProxy;
@@ -82,6 +83,8 @@ public class WindowHeaderExtensionConnector extends AbstractExtensionConnector {
         window.header.insertFirst(buttonDiv);
         addButtonClickListener(buttonDiv);
 
+        Element caption = (Element) window.header.getLastChild();
+        caption.getStyle().setHeight(36, Unit.PX);
     }
 
     public native void addButtonClickListener(Element el)
@@ -90,7 +93,7 @@ public class WindowHeaderExtensionConnector extends AbstractExtensionConnector {
         el.onclick = $entry(function () {
             self.@org.vaadin.addons.windowheaderextension.client.WindowHeaderExtensionConnector::buttonClicked()();
         });
-
+    
     }-*/;
 
     private void buttonClicked() {

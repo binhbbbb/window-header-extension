@@ -4,6 +4,6 @@ import java.io.Serializable;
 
 public interface WindowButtonClickListener extends Serializable {
 
-	public void buttonClicked();
+    public void buttonClicked();
 
 }
