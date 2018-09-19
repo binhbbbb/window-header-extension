@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/window-header-extension)
+[![Stars on Vaadin Directory](https://img.shields.io/vaadin-directory/star/window-header-extension.svg)](https://vaadin.com/directory/component/window-header-extension)
+
 # Window Header Extension
 
 This is a Vaadin add-on project created with in.virit:vaadin-gwt-addon archetype.
